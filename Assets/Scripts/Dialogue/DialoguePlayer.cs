@@ -18,6 +18,7 @@ public class DialoguePlayer : MonoBehaviour
     public TMP_Text charName;
     public TMP_Text charQuote;
     public Image imgDiamond;
+    public AudioSource audioSource;
 
     public AudioClip endDialogueSound;
 
@@ -37,7 +38,7 @@ public class DialoguePlayer : MonoBehaviour
     {
         get =>
             //yes, it is "fully revealed" if there is no selected quote yet
-            index < 0 
+            index < 0
             //but also if all characters should be shown
             || RevealedCharacterCount >= CurrentQuote.text.Length;
         set
@@ -96,6 +97,7 @@ public class DialoguePlayer : MonoBehaviour
             endDialogueSound,
             FindObjectOfType<PlayerController>().transform.position
             );
+        audioSource.Stop();
     }
 
     // Update is called once per frame
@@ -130,6 +132,8 @@ public class DialoguePlayer : MonoBehaviour
         imgDiamond.enabled = false;
         //Display quote
         displayQuote(CurrentQuote);
+        //Play voice line
+        playQuote(CurrentQuote);
     }
 
     private void displayQuote(Quote quote)
@@ -137,6 +141,12 @@ public class DialoguePlayer : MonoBehaviour
         charPortrait.sprite = Resources.Load<Sprite>("DialogueFaces/" + quote.imageName);
         charName.text = quote.characterName;
         displayQuoteText(quote.text);
+    }
+    private void playQuote(Quote quote)
+    {
+        AudioClip voiceLine = Resources.Load<AudioClip>("VoiceLines/" + quote.voiceLineName);
+        audioSource.clip = voiceLine;
+        audioSource.Play();
     }
     private void displayQuoteText(string text)
     {
