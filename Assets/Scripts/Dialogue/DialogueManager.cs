@@ -10,6 +10,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(DialoguePlayer))]
 public class DialogueManager : MonoBehaviour
 {
+    public string dialogueFileName = "dialogues";
     private DialogueData dialogueData;
     [SerializeField]
     private DialoguePlayer dialoguePlayer;
@@ -18,7 +19,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        string jsonString = Resources.Load<TextAsset>("dialogues").text;
+        string jsonString = Resources.Load<TextAsset>(dialogueFileName).text;
         dialogueData = JsonUtility.FromJson<DialogueData>(jsonString);
         dialogueData.dialogues.ForEach(d => d.inflate());
         dialoguePlayer.onDialogueEnded += takeActions;
