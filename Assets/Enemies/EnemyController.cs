@@ -188,25 +188,10 @@ public class EnemyController : MonoBehaviour
 
     void fireAway()
     {
-        if (isLeft)
-        {
-            Debug.Log(Quaternion.identity);
-            float thisX = transform.position.x - .5f;
-
-
-
-            Vector3 tossThis = new Vector3(thisX, transform.position.y);
-            Instantiate(preTrap, tossThis, Quaternion.identity);
-        }
-        else if (!isLeft)
-        {
-            float thisX = transform.position.x + .5f;
-
-            Vector3 tossThis = new Vector3(thisX, transform.position.y);
-            Instantiate(preTrap, tossThis, Quaternion.identity);
-            Debug.Log("fired");
-
-        }
+ 
+        Instantiate(preTrap, transform.position, Quaternion.identity);
+        Debug.Log("fired");
+ 
         
     }
 

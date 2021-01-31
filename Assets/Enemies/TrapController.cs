@@ -14,8 +14,6 @@ public class TrapController : MonoBehaviour
     void Start()
     {
         myRB = this.gameObject.GetComponent<Rigidbody2D>();
-        
-
 
       //  Ray2D playerCheck = new Ray2D(transform.position, Vector2.right);
         //inView = Physics2D.Raycast(transform.position, Vector2.left);
@@ -23,13 +21,13 @@ public class TrapController : MonoBehaviour
         
         if (inViewL)
         {
-            //Debug.Log(inView.transform.position);
-          //  Debug.Log("left");
+            Debug.Log(inViewL.transform.position);
+            Debug.Log(inViewL.transform.tag + "left");
             // look for 'player'
             if (inViewL.transform.tag == "Player")
             {
-             //   Debug.Log(inView.distance);
-                myVelocity.x = inView.distance;
+               Debug.Log(inView.distance + " left distance");
+                myVelocity.x = myVelocity.x*-1;
             }
            
         }
@@ -39,18 +37,18 @@ public class TrapController : MonoBehaviour
         RaycastHit2D inViewR = Physics2D.Raycast(transform.position, Vector2.right);
         if (inViewR)
         {
+            Debug.Log(inViewR.transform.tag + "right");
+            Debug.Log(inViewR.transform.position);
             // look for 'player'
-          //  Debug.Log("Right");
             if (inViewR.transform.tag == "Player")
             {
-             //   Debug.Log(inView.distance);
-                myVelocity.x = inView.distance * -1;
+                Debug.Log(inView.distance + " right distance");
+              //  myVelocity.x = inView.distance * -1;
             }
         }
 
-        myVelocity.y = 6;
+      //  myVelocity.y = 6;
         myRB.velocity = myVelocity;
-     //   Debug.Log(myRB.velocity);
     }
 
     // Update is called once per frame
