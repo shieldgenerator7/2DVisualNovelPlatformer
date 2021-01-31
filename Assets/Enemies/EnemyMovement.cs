@@ -5,7 +5,15 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-
+    /*
+     *          Speed   Run     View/Range    
+     * Small:   3       8       15
+     * 
+     * Shield:  1       3       10
+     * 
+     * Shoot:   2       0       20
+     * 
+     */
 
     public float moveSpeed;
     public float runSpeed;
@@ -19,7 +27,15 @@ public class EnemyMovement : MonoBehaviour
     public bool isLeft = false;
 
     public float viewDistance;
+    public bool isShort;
+    public bool isShield;
+    public bool isShoot;
 
+    public GameObject preTrap;
+    public float fireTimer = 3f;
+    public float timeToFire;
+    public bool isArmed = false;
+    
     void Awake()
     {
         moveToPos = oldPos = transform.position;
@@ -34,6 +50,16 @@ public class EnemyMovement : MonoBehaviour
     {
         Ray playerCheck = new Ray(transform.position, Vector3.forward);
         Ray floorCheck = new Ray(transform.position, Vector3.down);
+
+        if (isShoot && !isArmed)
+        {
+            timeToFire -= Time.deltaTime;
+            if (timeToFire < 0)
+            {
+                isArmed = true;
+            }
+        }
+
 
         if (isPatrolling)
         {
@@ -64,47 +90,41 @@ public class EnemyMovement : MonoBehaviour
                 isLeft = !isLeft;
             }
             transform.position = Vector3.MoveTowards(transform.position, moveToPos, moveSpeed * Time.deltaTime);
-        }
-
-
-        RaycastHit inView;
-        if (Physics.Raycast(playerCheck, out inView))
-        {
-            //   Debug.Log(inView);
-            Debug.Log(inView.transform.tag);
-            Debug.Log(inView.distance);
-
-            if (inView.transform.tag == "Player")
+            
+            RaycastHit inView;
+            if (Physics.Raycast(playerCheck, out inView))
             {
-                if (inView.distance < viewDistance)
+                // look for 'player'
+             //   Debug.Log(inView.transform.tag);
+            //    Debug.Log(inView.distance);
+
+                if (inView.transform.tag == "Player")
                 {
-                    isHunting = true;
-                    isPatrolling = false;
+                    if (inView.distance < viewDistance)
+                    {
+                        isHunting = true;
+                        isPatrolling = false;
+                    }
                 }
             }
 
-        } else
-        {
-            //lost sight up player
-            //find code to make it go back in patrol
-        }
 
+
+        }
 
 
         if (isHunting)
         {
-
+            //direction
             if (isLeft)
             {
                 moveToPos.x = transform.position.x - 1f;
                 playerCheck = new Ray(transform.position, Vector3.left);
-                oldPos = transform.position;
             }
             else
             {
                 moveToPos.x = transform.position.x + 1f;
                 playerCheck = new Ray(transform.position, Vector3.right);
-                oldPos = transform.position;
             }
 
             //Ray floorCheck = new Ray(transform.position, Vector3.down);
@@ -113,17 +133,50 @@ public class EnemyMovement : MonoBehaviour
                 //while on platform...
                 transform.position = Vector3.MoveTowards(transform.position, moveToPos, runSpeed * Time.deltaTime);
             }
-            else
+            else //fall
             {
                 moveToPos.y = transform.position.y - 1f;
                 transform.position = Vector3.MoveTowards(transform.position, moveToPos, runSpeed * Time.deltaTime);
             }
+
+
+            RaycastHit inView;
+            if (Physics.Raycast(playerCheck, out inView))
+            {
+                // look for 'player'
+
+                if (inView.transform.tag == "Player")
+                {
+                    if (inView.distance < viewDistance)
+                    {
+                        isHunting = true;
+                        isPatrolling = false;
+                    }
+
+                }
+            }
+            else
+            if (!isShield)
+            {
+                //only disable charge for non-shields
+                isHunting = false;
+                isPatrolling = true;
+            }
+            
+            if (isShoot && isArmed)
+            {
+                //only fire for shoot
+                fireAway();
+                isArmed = false;
+                timeToFire = fireTimer;
+            }
         }
     }
 
-    void chase()
+    void fireAway()
     {
-
+             Instantiate(preTrap, transform.position, Quaternion.identity);
+        Debug.Log("fired");
     }
 
     void takeHit()
