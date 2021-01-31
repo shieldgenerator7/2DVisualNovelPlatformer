@@ -97,7 +97,13 @@
           "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 2 (Thank the gods).wav"
         }
       ],
-      "actions": []
+      "actions": [
+        {
+          "variableName": "powerup",
+          "actionType": 1,
+          "actionValue": 1
+        }
+      ]
     },
     {
       "title": "Dialogue Title",
