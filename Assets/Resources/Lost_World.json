@@ -137,7 +137,7 @@
           "characterName": "Alien Scientist",
           "text": "*strange noises*",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\scientist_presses_button.png",
-          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Egghead Prime 1.mp3"
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Neutral.mp3"
         }
       ],
       "actions": [
@@ -178,7 +178,7 @@
           "characterName": "Alien Scientist",
           "text": "*more strange noises*",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\scientist_closeup.png",
-          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Egghead Prime 2.mp3"
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Inviting.mp3"
         }
       ],
       "actions": [
@@ -230,7 +230,7 @@
           "characterName": "Alien Scientist",
           "text": "*gasp* … *sob*",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\twibble_does_maths.png",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Sad.mp3"
         },
         {
           "characterName": "Twibble",
@@ -293,7 +293,7 @@
           "characterName": "Alien Scientist",
           "text": "*angry noises*",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\scientist_presses_button.png",
-          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Egghead Prime 4.mp3"
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Angry.mp3"
         }
       ],
       "actions": [
@@ -339,7 +339,7 @@
           "characterName": "Alien Scientist",
           "text": "*friendly sounding noises*",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\scientist_closeup.png",
-          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Egghead Prime 3.mp3"
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Friendly.mp3"
         }
       ],
       "actions": [
@@ -385,7 +385,7 @@
           "characterName": "Alien Scientist",
           "text": "*Angry noises*",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\scientist_presses_button.png",
-          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Egghead Prime 4.mp3"
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Angry.mp3"
         }
       ],
       "actions": [
@@ -436,7 +436,7 @@
           "characterName": "Alien Scientist",
           "text": "*strange noises*",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\scientist_closeup.png",
-          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Egghead Prime 1.mp3"
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Neutral.mp3"
         }
       ],
       "actions": [
