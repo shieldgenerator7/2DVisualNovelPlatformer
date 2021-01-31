@@ -1,0 +1,276 @@
+{
+  "dialogues": [
+    {
+      "title": "1",
+      "conditions": [],
+      "quotes": [
+        {
+          "characterName": "Father",
+          "text": "It has only been days since the invaders fell from th stars and yet they have already taken so much from us. [ship crashing]",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Recording.mp3"
+        },
+        {
+          "characterName": "Father",
+          "text": "Our homes. Destroyed. [village burning]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Father",
+          "text": "Our Families. Taken. [player character species in cages]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Father",
+          "text": "Our shrines. Desecrated. [temple with aliens taking artifacts]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Father",
+          "text": "But hope is not lost my child. We can still fight these horrors from the stars. Seek the ancient powers, gain the gods blessings, and take back our home! *cough* [slow zoom on fathers face]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Father",
+          "text": "I must go now... to meet your mother in the gods embrace... I pray we do not meet again soon my child... [fade to black game begins]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "Father is right, our people will need all the help we can get to fight these invaders. I hope I can reach the temple in time.",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "Thank the gods, the stories are real!",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "With this power our people finally stand a chance.",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": []
+    },
+    {
+      "title": "2",
+      "conditions": [
+        {
+          "variableName": "var1",
+          "testType": 0,
+          "testValue": 0
+        }
+      ],
+      "quotes": [
+        {
+          "characterName": "Story",
+          "text": "[Twibble high up on a ledge sees his remaining family below in a cage about to be placed in a strange device]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "No!",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Story",
+          "text": "[Leaps tackling the alien scientist holding the cotrols for the device moving their cage and slapping the controls away but the crane continues to move, Twibble not knowing how to use the controls, struggles to halt the cage by clinging to it  and struggling to pull it free it seems futile but at the last second the machine stops, because the alien scientist halted it]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "...Why?",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Alien Scientist",
+          "text": "*strange noises* [makes come here hand gestures while approaching Twibble]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": [
+        {
+          "variableName": "var1",
+          "actionType": 1,
+          "actionValue": 1
+        }
+      ]
+    },
+    {
+      "title": "3",
+      "conditions": [],
+      "quotes": [
+        {
+          "characterName": "Twibble",
+          "text": "Twibble: I don't understand, what are you trying to tell me? [choice A]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "[to himself] What if its a trap? [Back away] [choice B]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": [
+        {
+          "variableName": "choice1",
+          "actionType": 0,
+          "actionValue": 1
+        },
+        {
+          "variableName": "choice1",
+          "actionType": 0,
+          "actionValue": 2
+        }
+      ]
+    },
+    {
+      "title": "3 A",
+      "conditions": [
+        {
+          "variableName": "choice1",
+          "testType": 0,
+          "testValue": 1
+        }
+      ],
+      "quotes": [
+        {
+          "characterName": "Alien Scientist",
+          "text": "*more strange noises* [draws two symbols on computer tablet and shows it to twibble] a right angle diagram and a circle with half a line through it.",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "Is this... math? [Choice A-A]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "[Smack away tablet]Your runes are meaningless realease my family! (threaten) [choice A-B]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": []
+    },
+    {
+      "title": "3 A-A",
+      "conditions": [],
+      "quotes": [
+        {
+          "characterName": "",
+          "text": "You're... Trying to see if we're intelligent! twibble quickly writes down his species symbols and words for a 90 degree angle, PI, and their basic numbers.",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Alien Scientist",
+          "text": "[Tears running down his face, he releases twibbles family and runs excitedly into his base]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "Wait!",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "He's gone... [shakes head] It doesn't matter I have to get my family to safety.",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": []
+    },
+    {
+      "title": "3 A-B",
+      "conditions": [],
+      "quotes": [
+        {
+          "characterName": "Alien Scientist",
+          "text": "[clearly afraid, releases twibbles family and slowly reaches for his laser] BOSS FIGHT *Reduced difficulty*",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": []
+    },
+    {
+      "title": "3 B",
+      "conditions": [
+        {
+          "variableName": "choice1",
+          "testType": 0,
+          "testValue": 2
+        }
+      ],
+      "quotes": [
+        {
+          "characterName": "Alien Scientist",
+          "text": "[continues to approach and reaches out to touch twibble.]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "Your not taking me! [Bite] [Choice B-A]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "[Wait to see what happens] [Choice B-B]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": []
+    },
+    {
+      "title": "3 B-A",
+      "conditions": [],
+      "quotes": [
+        {
+          "characterName": "Alien Scientist",
+          "text": "[Obviously angry, grabs his laser] BOSS FIGHT *Normal Difficulty*",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": []
+    },
+    {
+      "title": "3 B-B",
+      "conditions": [],
+      "quotes": [
+        {
+          "characterName": "Alien Scientist",
+          "text": "[Places his hand on twibbles shoulder gently then suddenly jabs him with a device of some sort. Fade to black transition to level 2.]",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": []
+    }
+  ]
+}
