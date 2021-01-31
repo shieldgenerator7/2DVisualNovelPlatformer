@@ -429,9 +429,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40cedaa4d56599e4dbe7cea8a9bad9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 2
+  id: 11
   triggerSound: {fileID: 8300000, guid: 71f55a8ea22a13b45ab5a6765f394f71, type: 3}
-  connectedId: 1
+  connectedId: 9
   connectScene: Scene2
 --- !u!61 &662633301
 BoxCollider2D:
