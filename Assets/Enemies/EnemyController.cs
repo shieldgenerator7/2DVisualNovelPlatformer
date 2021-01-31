@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class EnemyMovement : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     /*
      *          Speed   Run     View/Range    
@@ -17,9 +16,9 @@ public class EnemyMovement : MonoBehaviour
 
     public float moveSpeed;
     public float runSpeed;
-    public Vector3 moveToPos;
+    public Vector2 moveToPos;
     public float myHeight;
-    public Vector3 oldPos;
+    public Vector2 oldPos;
     private static float nextStep = 1;
 
     public bool isPatrolling = true;
@@ -35,22 +34,22 @@ public class EnemyMovement : MonoBehaviour
     public float fireTimer = 3f;
     public float timeToFire;
     public bool isArmed = false;
-    
+    public RaycastHit2D inView;
+
     void Awake()
     {
         moveToPos = oldPos = transform.position;
-       // moveToPos.y = startingPos.y;
-        myHeight = transform.localScale.y + .1f;
-
+        myHeight = transform.localScale.y+1f;
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        Ray playerCheck = new Ray(transform.position, Vector3.forward);
-        Ray floorCheck = new Ray(transform.position, Vector3.down);
-
+        Ray2D playerCheck = new Ray2D(transform.position, Vector2.down);
+        Ray2D floorCheck1 = new Ray2D(transform.position, Vector2.down);
+        RaycastHit2D floorCheck = Physics2D.Raycast(transform.position, Vector2.down, myHeight);
+       // RaycastHit2D inView = Physics2D.Raycast(transform.position, Vector2.right);
         if (isShoot && !isArmed)
         {
             timeToFire -= Time.deltaTime;
@@ -64,39 +63,48 @@ public class EnemyMovement : MonoBehaviour
         if (isPatrolling)
         {
             //check movement status and move
-            
-
-            if (Physics.Raycast(floorCheck, myHeight))
+            //  Debug.Log(floorCheck);
+           // RaycastHit2D inView;
+            if (floorCheck)
             {
+               
                 //march onward
                 if (isLeft)
                 {
                     moveToPos.x = transform.position.x - 1f;
-                    playerCheck = new Ray(transform.position, Vector3.left);
+                    playerCheck = new Ray2D(transform.position, Vector2.left);
                     oldPos = transform.position;
+                    inView = Physics2D.Raycast(transform.position, Vector2.left);
                 }
                 else
                 {
                     moveToPos.x = transform.position.x + 1f;
-                    playerCheck = new Ray(transform.position, Vector3.right);
+                    playerCheck = new Ray2D(transform.position, Vector2.right);
                     oldPos = transform.position;
+                    inView = Physics2D.Raycast(transform.position, Vector2.right);
+
+
                 }
             }
             else
             {
+                 //   Debug.Log("false");
                 //at edge - stop and turn around
                 moveToPos = oldPos;
                 nextStep = nextStep * -1;
                 isLeft = !isLeft;
+                
             }
-            transform.position = Vector3.MoveTowards(transform.position, moveToPos, moveSpeed * Time.deltaTime);
-            
-            RaycastHit inView;
-            if (Physics.Raycast(playerCheck, out inView))
+            transform.position = Vector2.MoveTowards(transform.position, moveToPos, moveSpeed * Time.deltaTime);
+
+           
+            if (inView)
             {
+              //  Debug.Log(inView.transform.tag);
                 // look for 'player'
-             //   Debug.Log(inView.transform.tag);
-            //    Debug.Log(inView.distance);
+                //   Debug.Log(inView.transform.tag);
+                //    Debug.Log(inView.distance);
+              //  Debug.Log(playerCheck);
 
                 if (inView.transform.tag == "Player")
                 {
@@ -107,10 +115,12 @@ public class EnemyMovement : MonoBehaviour
                     }
                 }
             }
+            
 
 
 
         }
+        
 
 
         if (isHunting)
@@ -119,29 +129,30 @@ public class EnemyMovement : MonoBehaviour
             if (isLeft)
             {
                 moveToPos.x = transform.position.x - 1f;
-                playerCheck = new Ray(transform.position, Vector3.left);
+                playerCheck = new Ray2D(transform.position, Vector2.left);
             }
             else
             {
                 moveToPos.x = transform.position.x + 1f;
-                playerCheck = new Ray(transform.position, Vector3.right);
+                playerCheck = new Ray2D(transform.position, Vector2.right);
             }
 
             //Ray floorCheck = new Ray(transform.position, Vector3.down);
-            if (Physics.Raycast(floorCheck, myHeight))
-            { 
-                //while on platform...
-                transform.position = Vector3.MoveTowards(transform.position, moveToPos, runSpeed * Time.deltaTime);
+            if (floorCheck)
+            {
+               // //while on platform...
+                transform.position = Vector2.MoveTowards(transform.position, moveToPos, runSpeed * Time.deltaTime);
             }
             else //fall
             {
                 moveToPos.y = transform.position.y - 1f;
-                transform.position = Vector3.MoveTowards(transform.position, moveToPos, runSpeed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, moveToPos, runSpeed * Time.deltaTime);
             }
 
 
-            RaycastHit inView;
-            if (Physics.Raycast(playerCheck, out inView))
+            RaycastHit2D inViewL = Physics2D.Raycast(transform.position, Vector2.left);
+            RaycastHit2D inViewR = Physics2D.Raycast(transform.position, Vector2.right);
+            if (inViewL || inViewR)
             {
                 // look for 'player'
 
@@ -151,9 +162,11 @@ public class EnemyMovement : MonoBehaviour
                     {
                         isHunting = true;
                         isPatrolling = false;
+
                     }
 
                 }
+               
             }
             else
             if (!isShield)
@@ -175,13 +188,31 @@ public class EnemyMovement : MonoBehaviour
 
     void fireAway()
     {
-     //        Instantiate(preTrap, transform.position, Quaternion.identity);
-        Debug.Log("fired");
+        if (isLeft)
+        {
+            Debug.Log(Quaternion.identity);
+            float thisX = transform.position.x - .5f;
+
+
+
+            Vector3 tossThis = new Vector3(thisX, transform.position.y);
+            Instantiate(preTrap, tossThis, Quaternion.identity);
+        }
+        else if (!isLeft)
+        {
+            float thisX = transform.position.x + .5f;
+
+            Vector3 tossThis = new Vector3(thisX, transform.position.y);
+            Instantiate(preTrap, tossThis, Quaternion.identity);
+            Debug.Log("fired");
+
+        }
+        
     }
 
     void takeHit()
     {
-        
+        //play animation then...
+        Destroy(this.gameObject);
     }
 }
-

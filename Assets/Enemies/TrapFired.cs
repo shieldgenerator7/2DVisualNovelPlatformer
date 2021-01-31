@@ -12,7 +12,12 @@ public class TrapFired : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myRB = this.gameObject.GetComponent<Rigidbody>();
+        if (this.gameObject.GetComponent<Rigidbody>())
+        {
+            myRB = this.gameObject.GetComponent<Rigidbody>();
+
+        }
+       // myRB = this.gameObject.GetComponent<Rigidbody>();
         RaycastHit inView;
         
 
