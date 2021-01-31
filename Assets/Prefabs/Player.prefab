@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 3515695174127860405}
   - component: {fileID: 3515695174127860402}
   - component: {fileID: 8563302908504471829}
+  - component: {fileID: 5118438756923500956}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -224,6 +225,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5118438756923500956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3515695174127860403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a107305979041e4f831498e6ddfcfc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activationVariableName: powerup
+  delayBetweenShots: 0.5
+  shotSpeed: 5
+  shotPrefab: {fileID: 1676165301138677357, guid: 1ddb326b374833943903ce9742709f36, type: 3}
+  shootSound: {fileID: 8300000, guid: 769910226b53e5f48b09f0fb1f9906ed, type: 3}
 --- !u!1001 &3515695173771484825
 PrefabInstance:
   m_ObjectHideFlags: 0
