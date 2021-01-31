@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredVariable: endgame
-  requiredValue: 1
+  requiredValue: 2
   actionToTake: 0
   elseActionToTake: 1
 --- !u!114 &1701187678
