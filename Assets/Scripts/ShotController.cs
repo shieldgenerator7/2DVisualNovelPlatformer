@@ -17,6 +17,9 @@ public class ShotController : MonoBehaviour
         {
             alienHP.damage();
         }
-        Destroy(gameObject);
+        if (!collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

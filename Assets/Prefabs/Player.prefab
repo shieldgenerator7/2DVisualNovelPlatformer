@@ -63,6 +63,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3515695173774966829}
+  - {fileID: 708822362534006307}
   - {fileID: 5860635646980985433}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -241,7 +242,38 @@ MonoBehaviour:
   delayBetweenShots: 0.5
   shotSpeed: 5
   shotPrefab: {fileID: 1676165301138677357, guid: 1ddb326b374833943903ce9742709f36, type: 3}
+  launchPosition: {fileID: 708822362534006307}
   shootSound: {fileID: 8300000, guid: 769910226b53e5f48b09f0fb1f9906ed, type: 3}
+--- !u!1 &8899756289053202930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 708822362534006307}
+  m_Layer: 0
+  m_Name: launch position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &708822362534006307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8899756289053202930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.483, y: 0.29, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3515695174127860406}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3515695173771484825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -447,7 +479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7034459013446061248, guid: 582be99d46c34bf4ea5a557923baf586, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7034459013446061248, guid: 582be99d46c34bf4ea5a557923baf586, type: 3}
       propertyPath: m_LocalPosition.x

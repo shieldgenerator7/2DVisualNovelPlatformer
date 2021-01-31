@@ -10,6 +10,7 @@ public class LaserAbility : PlayerAbility
 
     [Header("Components")]
     public GameObject shotPrefab;
+    public Transform launchPosition;
 
     [Header("Sound Effects")]
     public AudioClip shootSound;
@@ -32,7 +33,7 @@ public class LaserAbility : PlayerAbility
         {
             lastShootTime = Time.time;
             GameObject shot = Instantiate(shotPrefab);
-            shot.transform.position = transform.position;
+            shot.transform.position = launchPosition.transform.position;
             shot.GetComponent<Rigidbody2D>().velocity =
                 Vector2.right * Mathf.Sign(transform.localScale.x) * shotSpeed;
             AudioSource.PlayClipAtPoint(shootSound, transform.position);
