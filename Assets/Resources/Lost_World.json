@@ -419,6 +419,134 @@
           "actionValue": 1
         }
       ]
+    },
+    {
+      "title": "Freedom",
+      "conditions": [
+        {
+          "variableName": "choiceAA",
+          "testType": 0,
+          "testValue": 1
+        },
+        {
+          "variableName": "endgame",
+          "testType": 0,
+          "testValue": 0
+        }
+      ],
+      "quotes": [
+        {
+          "characterName": "Twibble",
+          "text": "I freed my family!",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\twibble_closeup.png",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "The alien scientist informed his comrades that we are sentient, and very intelligent.",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\twibble_closeup.png",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "So then the whole alien race left us alone.",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\twibble_closeup.png",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "We rebuilt our village, and are now working to rebuild our forest.",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\twibble_closeup.png",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": [
+        {
+          "variableName": "endgame",
+          "actionType": 0,
+          "actionValue": 1
+        }
+      ]
+    },
+    {
+      "title": "Dialogue Title",
+      "conditions": [
+        {
+          "variableName": "endgame",
+          "testType": 0,
+          "testValue": 0
+        }
+      ],
+      "quotes": [
+        {
+          "characterName": "Twibble",
+          "text": "I freed my family!",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\twibble_closeup.png",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "We ran off into the forest.",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\twibble_closeup.png",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Twibble",
+          "text": "The aliens have not been able to find us since.",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\twibble_closeup.png",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": [
+        {
+          "variableName": "endgame",
+          "actionType": 0,
+          "actionValue": 1
+        }
+      ]
+    },
+    {
+      "title": "Dialogue Title",
+      "conditions": [
+        {
+          "variableName": "endgame",
+          "testType": 0,
+          "testValue": 1
+        }
+      ],
+      "quotes": [
+        {
+          "characterName": "Credits",
+          "text": "Programming - Shield Generator VII, Ginpeporimeg",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Credits",
+          "text": "Art - Mizz Saylor, Shield Generator VII",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Credits",
+          "text": "Character Rigging & Animation: Zombie Virals",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Credits",
+          "text": "Story - Max Well Wilde",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Credits",
+          "text": "Voice Acting - Max Well Wilde, Tristan D.",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": []
     }
   ]
 }
