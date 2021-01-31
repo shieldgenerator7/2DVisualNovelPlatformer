@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4323357765083200541}
   - component: {fileID: -8086243583444900698}
   - component: {fileID: -3810799101878977105}
+  - component: {fileID: 7115374454448361726}
   m_Layer: 0
   m_Name: enemy_bullet
   m_TagString: Untagged
@@ -138,3 +139,16 @@ MonoBehaviour:
   myVelocity: {x: 5, y: 5, z: 0}
   mySpeed: 5
   myRB: {fileID: 0}
+--- !u!114 &7115374454448361726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7370627508042538007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a924f41ee16aa45bbebb4b84c7811c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHP: 1
