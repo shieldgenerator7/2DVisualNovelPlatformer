@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 3050601}
   - component: {fileID: 3050600}
   - component: {fileID: 3050599}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: cage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 252836257}
   - component: {fileID: 252836256}
   - component: {fileID: 252836255}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: family
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1798,7 +1798,7 @@ GameObject:
   - component: {fileID: 1246069722}
   - component: {fileID: 1246069721}
   - component: {fileID: 1246069720}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: machine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2360,7 +2360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1644176275}
   - component: {fileID: 1644176274}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: crane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2858,7 +2858,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1910481614}
   - component: {fileID: 1910481615}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2981,7 +2981,7 @@ GameObject:
   - component: {fileID: 1998003933}
   - component: {fileID: 1998003932}
   - component: {fileID: 1998003931}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: scientist 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
