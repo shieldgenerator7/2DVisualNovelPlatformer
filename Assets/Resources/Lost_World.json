@@ -301,6 +301,11 @@
           "variableName": "choiceAB",
           "actionType": 0,
           "actionValue": 1
+        },
+        {
+          "variableName": "endgame",
+          "actionType": 0,
+          "actionValue": 1
         }
       ]
     },
@@ -386,6 +391,11 @@
       "actions": [
         {
           "variableName": "choiceBA",
+          "actionType": 0,
+          "actionValue": 1
+        },
+        {
+          "variableName": "endgame",
           "actionType": 0,
           "actionValue": 1
         }
@@ -568,12 +578,49 @@
         },
         {
           "characterName": "Credits",
-          "text": "Voice Acting - Warren Street, Tristan DeMaria",
+          "text": "Voice Acting - Warren Street, Tristan DeMaria, Earthshine",
           "imageFileName": "",
           "voiceLineFileName": ""
         }
       ],
       "actions": []
+    },
+    {
+      "title": "Dialogue Title",
+      "conditions": [
+        {
+          "variableName": "endgame",
+          "testType": 0,
+          "testValue": 1
+        }
+      ],
+      "quotes": [
+        {
+          "characterName": "Old Twibble",
+          "text": "Things didn't go well.",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Old Twibble",
+          "text": "The aliens hunted us down and killed us all.",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        },
+        {
+          "characterName": "Old Twibble",
+          "text": "Im writing this with my dying breath",
+          "imageFileName": "",
+          "voiceLineFileName": ""
+        }
+      ],
+      "actions": [
+        {
+          "variableName": "endgame",
+          "actionType": 0,
+          "actionValue": 2
+        }
+      ]
     }
   ]
 }
