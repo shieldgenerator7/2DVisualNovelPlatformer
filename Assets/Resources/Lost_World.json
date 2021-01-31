@@ -250,6 +250,11 @@
           "variableName": "choiceAA",
           "actionType": 0,
           "actionValue": 1
+        },
+        {
+          "variableName": "endgame",
+          "actionType": 0,
+          "actionValue": 1
         }
       ]
     },
@@ -429,6 +434,11 @@
           "variableName": "choiceBB",
           "actionType": 0,
           "actionValue": 1
+        },
+        {
+          "variableName": "endgame",
+          "actionType": 0,
+          "actionValue": 1
         }
       ]
     },
@@ -485,6 +495,11 @@
       "conditions": [
         {
           "variableName": "endgame",
+          "testType": 0,
+          "testValue": 1
+        },
+        {
+          "variableName": "choiceBB",
           "testType": 0,
           "testValue": 1
         }
