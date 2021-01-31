@@ -7,37 +7,37 @@
         {
           "characterName": "Father",
           "text": "It has only been days since the invaders fell from th stars and yet they have already taken so much from us. [ship crashing]",
-          "imageFileName": "",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\alien_arrival.png",
           "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Recording.mp3"
         },
         {
           "characterName": "Father",
           "text": "Our homes. Destroyed. [village burning]",
-          "imageFileName": "",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\villages_burning.png",
           "voiceLineFileName": ""
         },
         {
           "characterName": "Father",
           "text": "Our Families. Taken. [player character species in cages]",
-          "imageFileName": "",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\villagers_caged.png",
           "voiceLineFileName": ""
         },
         {
           "characterName": "Father",
           "text": "Our shrines. Desecrated. [temple with aliens taking artifacts]",
-          "imageFileName": "",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\aliens_stealing.png",
           "voiceLineFileName": ""
         },
         {
           "characterName": "Father",
           "text": "But hope is not lost my child. We can still fight these horrors from the stars. Seek the ancient powers, gain the gods blessings, and take back our home! *cough* [slow zoom on fathers face]",
-          "imageFileName": "",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\alien_arrival.png",
           "voiceLineFileName": ""
         },
         {
           "characterName": "Father",
           "text": "I must go now... to meet your mother in the gods embrace... I pray we do not meet again soon my child... [fade to black game begins]",
-          "imageFileName": "",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\alien_arrival.png",
           "voiceLineFileName": ""
         },
         {

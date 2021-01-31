@@ -138,7 +138,7 @@ public class DialoguePlayer : MonoBehaviour
 
     private void displayQuote(Quote quote)
     {
-        charPortrait.sprite = Resources.Load<Sprite>("DialogueFaces/" + quote.imageName);
+        charPortrait.sprite = Resources.Load<Sprite>("DialoguePics/" + quote.imageName);
         charName.text = quote.characterName;
         displayQuoteText(quote.text);
     }
