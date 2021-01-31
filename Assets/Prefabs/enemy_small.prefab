@@ -153,6 +153,7 @@ MonoBehaviour:
   runSpeed: 8
   moveToPos: {x: 0, y: 0}
   myHeight: 0
+  myWidth: 0
   oldPos: {x: 0, y: 0}
   isPatrolling: 1
   isHunting: 0
@@ -165,3 +166,4 @@ MonoBehaviour:
   fireTimer: 3
   timeToFire: 0
   isArmed: 0
+  mySprite: {fileID: 0}
