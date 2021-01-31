@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3047751902737339087}
   - component: {fileID: 4323357765083200541}
   - component: {fileID: 5436111932395463851}
-  - component: {fileID: 9169056148060038406}
   - component: {fileID: 3600938102680410305}
+  - component: {fileID: -2579747930733298749}
   m_Layer: 0
   m_Name: enemy_laser
   m_TagString: Untagged
@@ -123,34 +123,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.036831856, y: -0.10747516}
   m_Size: {x: 0.7100315, y: 1.3370802}
   m_Direction: 0
---- !u!114 &9169056148060038406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7370627508042538007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96808d49c21ef4c43afcfc3522f8aa0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
-  runSpeed: 0
-  moveToPos: {x: 0, y: 0, z: 0}
-  myHeight: 0
-  oldPos: {x: 0, y: 0, z: 0}
-  isPatrolling: 1
-  isHunting: 0
-  isLeft: 0
-  viewDistance: 20
-  isShort: 0
-  isShield: 0
-  isShoot: 1
-  preTrap: {fileID: 7370627508042538007, guid: 15a0b245b71943b48ab4527189f9ae2f, type: 3}
-  fireTimer: 3
-  timeToFire: 0
-  isArmed: 0
 --- !u!114 &3600938102680410305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,3 +136,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHP: 2
+--- !u!114 &-2579747930733298749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7370627508042538007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b224b4e0585b39a4483a2092c9bfdb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  runSpeed: 0
+  moveToPos: {x: 0, y: 0}
+  myHeight: 0
+  oldPos: {x: 0, y: 0}
+  isPatrolling: 1
+  isHunting: 0
+  isLeft: 0
+  viewDistance: 20
+  isShort: 0
+  isShield: 0
+  isShoot: 1
+  preTrap: {fileID: 8923921130428131624, guid: 339c07428f4be484f96410b484a8a799, type: 3}
+  fireTimer: 3
+  timeToFire: 0
+  isArmed: 0

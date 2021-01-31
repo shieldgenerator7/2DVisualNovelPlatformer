@@ -149,5 +149,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTTL: 2
-  myVelocity: {x: 5, y: 5}
+  myVelocity: {x: 10, y: 8}
   myRB: {fileID: 4323357765083200541}
