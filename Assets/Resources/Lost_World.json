@@ -443,7 +443,7 @@
         {
           "variableName": "endgame",
           "testType": 0,
-          "testValue": 0
+          "testValue": 1
         }
       ],
       "quotes": [
@@ -476,7 +476,7 @@
         {
           "variableName": "endgame",
           "actionType": 0,
-          "actionValue": 1
+          "actionValue": 2
         }
       ]
     },
@@ -486,7 +486,7 @@
         {
           "variableName": "endgame",
           "testType": 0,
-          "testValue": 0
+          "testValue": 1
         }
       ],
       "quotes": [
@@ -513,7 +513,7 @@
         {
           "variableName": "endgame",
           "actionType": 0,
-          "actionValue": 1
+          "actionValue": 2
         }
       ]
     },
@@ -523,7 +523,7 @@
         {
           "variableName": "endgame",
           "testType": 0,
-          "testValue": 1
+          "testValue": 2
         }
       ],
       "quotes": [
