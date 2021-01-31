@@ -81,6 +81,10 @@ public class AreaManager : MonoBehaviour
         this.targetDoor = door;
         goToArea(sceneName);
     }
+    public void rejumpToDoor()
+    {
+        goToArea(currentScene);
+    }
 
     public void positionAtDoor(Scene s, LoadSceneMode mode)
     {
