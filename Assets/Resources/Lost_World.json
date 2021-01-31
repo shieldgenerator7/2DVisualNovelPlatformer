@@ -2,41 +2,47 @@
   "dialogues": [
     {
       "title": "1",
-      "conditions": [],
+      "conditions": [
+        {
+          "variableName": "intro",
+          "testType": 0,
+          "testValue": 0
+        }
+      ],
       "quotes": [
         {
           "characterName": "Father",
-          "text": "It has only been days since the invaders fell from th stars and yet they have already taken so much from us. [ship crashing]",
+          "text": "It has only been days since the invaders fell from the stars and yet they have already taken so much from us.",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\alien_arrival.png",
           "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Invaders 1.mp3"
         },
         {
           "characterName": "Father",
-          "text": "Our homes. Destroyed. [village burning]",
+          "text": "Our homes. Destroyed.",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\villages_burning.png",
           "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Invaders 2.mp3"
         },
         {
           "characterName": "Father",
-          "text": "Our Families. Taken. [player character species in cages]",
+          "text": "Our Families. Taken.",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\villagers_caged.png",
           "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Invaders 3.mp3"
         },
         {
           "characterName": "Father",
-          "text": "Our shrines. Desecrated. [temple with aliens taking artifacts]",
+          "text": "Our shrines. Desecrated.",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\aliens_stealing.png",
           "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Invaders 4.mp3"
         },
         {
           "characterName": "Father",
-          "text": "But hope is not lost my child. We can still fight these horrors from the stars. Seek the ancient powers, gain the gods blessings, and take back our home! *cough* [slow zoom on fathers face]",
+          "text": "But hope, hope is not lost my child. We can still fight these horrors from the stars. Go forth to the Temple, seek the ancient powers, gain the gods blessings, and take back our home! *cough*",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\alien_arrival.png",
           "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Invaders 5.mp3"
         },
         {
           "characterName": "Father",
-          "text": "I must go now... to meet your mother in the gods embrace... I pray we do not meet again soon my child... [fade to black game begins]",
+          "text": "I must go now... to meet your mother in the god's embrace... I pray we do not meet again soon my child...",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\alien_arrival.png",
           "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Invaders 6.mp3"
         },
@@ -44,127 +50,36 @@
           "characterName": "Twibble",
           "text": "Father is right, our people will need all the help we can get to fight these invaders. I hope I can reach the temple in time.",
           "imageFileName": "",
-          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 1.mp3"
-        },
-        {
-          "characterName": "Twibble",
-          "text": "Thank the gods, the stories are real!",
-          "imageFileName": "",
-          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 2.mp3"
-        },
-        {
-          "characterName": "Twibble",
-          "text": "With this power our people finally stand a chance.",
-          "imageFileName": "",
-          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 3.mp3"
-        }
-      ],
-      "actions": []
-    },
-    {
-      "title": "2",
-      "conditions": [
-        {
-          "variableName": "var1",
-          "testType": 0,
-          "testValue": 0
-        }
-      ],
-      "quotes": [
-        {
-          "characterName": "Story",
-          "text": "[Twibble high up on a ledge sees his remaining family below in a cage about to be placed in a strange device]",
-          "imageFileName": "",
-          "voiceLineFileName": ""
-        },
-        {
-          "characterName": "Twibble",
-          "text": "No!",
-          "imageFileName": "",
-          "voiceLineFileName": ""
-        },
-        {
-          "characterName": "Story",
-          "text": "[Leaps tackling the alien scientist holding the cotrols for the device moving their cage and slapping the controls away but the crane continues to move, Twibble not knowing how to use the controls, struggles to halt the cage by clinging to it  and struggling to pull it free it seems futile but at the last second the machine stops, because the alien scientist halted it]",
-          "imageFileName": "",
-          "voiceLineFileName": ""
-        },
-        {
-          "characterName": "Twibble",
-          "text": "...Why?",
-          "imageFileName": "",
-          "voiceLineFileName": ""
-        },
-        {
-          "characterName": "Alien Scientist",
-          "text": "*strange noises* [makes come here hand gestures while approaching Twibble]",
-          "imageFileName": "",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 1 (Father is right).wav"
         }
       ],
       "actions": [
         {
-          "variableName": "var1",
+          "variableName": "intro",
           "actionType": 1,
           "actionValue": 1
         }
       ]
     },
     {
-      "title": "3",
-      "conditions": [],
-      "quotes": [
-        {
-          "characterName": "Twibble",
-          "text": "Twibble: I don't understand, what are you trying to tell me? [choice A]",
-          "imageFileName": "",
-          "voiceLineFileName": ""
-        },
-        {
-          "characterName": "Twibble",
-          "text": "[to himself] What if its a trap? [Back away] [choice B]",
-          "imageFileName": "",
-          "voiceLineFileName": ""
-        }
-      ],
-      "actions": [
-        {
-          "variableName": "choice1",
-          "actionType": 0,
-          "actionValue": 1
-        },
-        {
-          "variableName": "choice1",
-          "actionType": 0,
-          "actionValue": 2
-        }
-      ]
-    },
-    {
-      "title": "3 A",
+      "title": "Dialogue Title",
       "conditions": [
         {
-          "variableName": "choice1",
+          "variableName": "intro",
           "testType": 0,
           "testValue": 1
         }
       ],
       "quotes": [
         {
-          "characterName": "Alien Scientist",
-          "text": "*more strange noises* [draws two symbols on computer tablet and shows it to twibble] a right angle diagram and a circle with half a line through it.",
+          "characterName": "Twibble",
+          "text": "Father is right, our people will need all the help we can get to fight these invaders. I hope I can reach the temple in time.",
           "imageFileName": "",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 1 (Father is right).wav"
         },
         {
-          "characterName": "Twibble",
-          "text": "Is this... math? [Choice A-A]",
-          "imageFileName": "",
-          "voiceLineFileName": ""
-        },
-        {
-          "characterName": "Twibble",
-          "text": "[Smack away tablet]Your runes are meaningless realease my family! (threaten) [choice A-B]",
+          "characterName": "Father",
+          "text": "...",
           "imageFileName": "",
           "voiceLineFileName": ""
         }
@@ -172,18 +87,136 @@
       "actions": []
     },
     {
-      "title": "3 A-A",
+      "title": "Powerup",
       "conditions": [],
       "quotes": [
         {
-          "characterName": "",
-          "text": "You're... Trying to see if we're intelligent! twibble quickly writes down his species symbols and words for a 90 degree angle, PI, and their basic numbers.",
+          "characterName": "Twibble",
+          "text": "Thank the gods, the stories are real! With this power our people finally stand a chance.",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 2 (Thank the gods).wav"
+        }
+      ],
+      "actions": []
+    },
+    {
+      "title": "Dialogue Title",
+      "conditions": [
+        {
+          "variableName": "alien",
+          "testType": 0,
+          "testValue": 0
+        }
+      ],
+      "quotes": [
+        {
+          "characterName": "Twibble",
+          "text": "No, not my Family!",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 3 (No not my family).wav"
+        },
+        {
+          "characterName": "Twibble",
+          "text": "...Why?",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 4 (Why).wav"
+        },
+        {
+          "characterName": "Alien Scientist",
+          "text": "*strange noises*",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Egghead Prime 1.mp3"
+        }
+      ],
+      "actions": [
+        {
+          "variableName": "alien",
+          "actionType": 1,
+          "actionValue": 1
+        }
+      ]
+    },
+    {
+      "title": "Choice A",
+      "conditions": [
+        {
+          "variableName": "alien",
+          "testType": 0,
+          "testValue": 1
+        },
+        {
+          "variableName": "choiceA",
+          "testType": 0,
+          "testValue": 0
+        },
+        {
+          "variableName": "choiceB",
+          "testType": 0,
+          "testValue": 0
+        }
+      ],
+      "quotes": [
+        {
+          "characterName": "Twibble",
+          "text": "I don't understand, what are you trying to tell me?",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 5 (I don't understand).wav"
+        },
+        {
+          "characterName": "Alien Scientist",
+          "text": "*more strange noises*",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Egghead Prime 2.mp3"
+        }
+      ],
+      "actions": [
+        {
+          "variableName": "choiceA",
+          "actionType": 0,
+          "actionValue": 1
+        }
+      ]
+    },
+    {
+      "title": "Choice AA",
+      "conditions": [
+        {
+          "variableName": "alien",
+          "testType": 0,
+          "testValue": 1
+        },
+        {
+          "variableName": "choiceA",
+          "testType": 0,
+          "testValue": 1
+        },
+        {
+          "variableName": "choiceAA",
+          "testType": 0,
+          "testValue": 0
+        },
+        {
+          "variableName": "choiceAB",
+          "testType": 0,
+          "testValue": 0
+        }
+      ],
+      "quotes": [
+        {
+          "characterName": "Twibble",
+          "text": "Is this... math? You're... Trying to see if we're intelligent!",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 6 (Is this math).wav"
+        },
+        {
+          "characterName": "Twibble",
+          "text": "*quickly writes down his species' symbols and words for a 90 degree angle, PI, and their basic numbers.*",
           "imageFileName": "",
           "voiceLineFileName": ""
         },
         {
           "characterName": "Alien Scientist",
-          "text": "[Tears running down his face, he releases twibbles family and runs excitedly into his base]",
+          "text": "*gasp* … *sob*",
           "imageFileName": "",
           "voiceLineFileName": ""
         },
@@ -191,86 +224,201 @@
           "characterName": "Twibble",
           "text": "Wait!",
           "imageFileName": "",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 7 (Wait).wav"
         },
         {
           "characterName": "Twibble",
-          "text": "He's gone... [shakes head] It doesn't matter I have to get my family to safety.",
+          "text": "He's gone... It doesn't matter I have to get my family to safety.",
           "imageFileName": "",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 8 (He's gone).wav"
         }
       ],
-      "actions": []
-    },
-    {
-      "title": "3 A-B",
-      "conditions": [],
-      "quotes": [
+      "actions": [
         {
-          "characterName": "Alien Scientist",
-          "text": "[clearly afraid, releases twibbles family and slowly reaches for his laser] BOSS FIGHT *Reduced difficulty*",
-          "imageFileName": "",
-          "voiceLineFileName": ""
+          "variableName": "choiceAA",
+          "actionType": 0,
+          "actionValue": 1
         }
-      ],
-      "actions": []
+      ]
     },
     {
-      "title": "3 B",
+      "title": "Choice AB",
       "conditions": [
         {
-          "variableName": "choice1",
+          "variableName": "alien",
           "testType": 0,
-          "testValue": 2
-        }
-      ],
-      "quotes": [
-        {
-          "characterName": "Alien Scientist",
-          "text": "[continues to approach and reaches out to touch twibble.]",
-          "imageFileName": "",
-          "voiceLineFileName": ""
+          "testValue": 1
         },
         {
-          "characterName": "Twibble",
-          "text": "Your not taking me! [Bite] [Choice B-A]",
-          "imageFileName": "",
-          "voiceLineFileName": ""
+          "variableName": "choiceA",
+          "testType": 0,
+          "testValue": 1
         },
         {
+          "variableName": "choiceAA",
+          "testType": 0,
+          "testValue": 0
+        },
+        {
+          "variableName": "choiceAB",
+          "testType": 0,
+          "testValue": 0
+        }
+      ],
+      "quotes": [
+        {
           "characterName": "Twibble",
-          "text": "[Wait to see what happens] [Choice B-B]",
+          "text": "Your runes are meaningless, free my family!",
           "imageFileName": "",
-          "voiceLineFileName": ""
-        }
-      ],
-      "actions": []
-    },
-    {
-      "title": "3 B-A",
-      "conditions": [],
-      "quotes": [
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 9 (Your runes).wav"
+        },
         {
           "characterName": "Alien Scientist",
-          "text": "[Obviously angry, grabs his laser] BOSS FIGHT *Normal Difficulty*",
+          "text": "*angry noises*",
           "imageFileName": "",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Egghead Prime 4.mp3"
         }
       ],
-      "actions": []
+      "actions": [
+        {
+          "variableName": "choiceAB",
+          "actionType": 0,
+          "actionValue": 1
+        }
+      ]
     },
     {
-      "title": "3 B-B",
-      "conditions": [],
-      "quotes": [
+      "title": "Choice B",
+      "conditions": [
         {
-          "characterName": "Alien Scientist",
-          "text": "[Places his hand on twibbles shoulder gently then suddenly jabs him with a device of some sort. Fade to black transition to level 2.]",
-          "imageFileName": "",
-          "voiceLineFileName": ""
+          "variableName": "alien",
+          "testType": 0,
+          "testValue": 1
+        },
+        {
+          "variableName": "choiceA",
+          "testType": 0,
+          "testValue": 0
+        },
+        {
+          "variableName": "choiceB",
+          "testType": 0,
+          "testValue": 0
         }
       ],
-      "actions": []
+      "quotes": [
+        {
+          "characterName": "Twibble",
+          "text": "What if it's a trap?",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 10 (What if).wav"
+        },
+        {
+          "characterName": "Alien scientist",
+          "text": "*friendly sounding noises*",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Egghead Prime 3.mp3"
+        }
+      ],
+      "actions": [
+        {
+          "variableName": "choiceB",
+          "actionType": 0,
+          "actionValue": 1
+        }
+      ]
+    },
+    {
+      "title": "Choice BA",
+      "conditions": [
+        {
+          "variableName": "alien",
+          "testType": 0,
+          "testValue": 1
+        },
+        {
+          "variableName": "choiceB",
+          "testType": 0,
+          "testValue": 1
+        },
+        {
+          "variableName": "choiceBA",
+          "testType": 0,
+          "testValue": 0
+        },
+        {
+          "variableName": "choiceBB",
+          "testType": 0,
+          "testValue": 0
+        }
+      ],
+      "quotes": [
+        {
+          "characterName": "Twibble",
+          "text": "You're not taking me!",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibbles 11 (You're not taking me).wav"
+        },
+        {
+          "characterName": "Alien Scientist",
+          "text": "*Angry noises*",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Egghead Prime 4.mp3"
+        }
+      ],
+      "actions": [
+        {
+          "variableName": "choiceBA",
+          "actionType": 0,
+          "actionValue": 1
+        }
+      ]
+    },
+    {
+      "title": "Choice BB",
+      "conditions": [
+        {
+          "variableName": "alien",
+          "testType": 0,
+          "testValue": 1
+        },
+        {
+          "variableName": "choiceB",
+          "testType": 0,
+          "testValue": 1
+        },
+        {
+          "variableName": "choiceBA",
+          "testType": 0,
+          "testValue": 0
+        },
+        {
+          "variableName": "choiceBB",
+          "testType": 0,
+          "testValue": 0
+        }
+      ],
+      "quotes": [
+        {
+          "characterName": "Twibble",
+          "text": "Lets see what he’ll do…",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibbles 12 (Let's see).wav"
+        },
+        {
+          "characterName": "Alien Scientist",
+          "text": "*strange noises*",
+          "imageFileName": "",
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Egghead Prime 1.mp3"
+        }
+      ],
+      "actions": [
+        {
+          "variableName": "choiceBB",
+          "actionType": 0,
+          "actionValue": 1
+        }
+      ]
     }
   ]
 }
