@@ -5,6 +5,7 @@ using UnityEngine;
 public class AlienHP : MonoBehaviour
 {
     public int startHP;
+    public bool dangerous = true;
 
     private int hp;
 

@@ -9,6 +9,7 @@ public class OnDamagedPlayDialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GetComponent<AlienHP>().onDamaged -= damaged;
         GetComponent<AlienHP>().onDamaged += damaged;
     }
 
