@@ -8,55 +8,55 @@
           "characterName": "Father",
           "text": "It has only been days since the invaders fell from th stars and yet they have already taken so much from us. [ship crashing]",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\alien_arrival.png",
-          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Recording.mp3"
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Invaders 1.mp3"
         },
         {
           "characterName": "Father",
           "text": "Our homes. Destroyed. [village burning]",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\villages_burning.png",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Invaders 2.mp3"
         },
         {
           "characterName": "Father",
           "text": "Our Families. Taken. [player character species in cages]",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\villagers_caged.png",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Invaders 3.mp3"
         },
         {
           "characterName": "Father",
           "text": "Our shrines. Desecrated. [temple with aliens taking artifacts]",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\aliens_stealing.png",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Invaders 4.mp3"
         },
         {
           "characterName": "Father",
           "text": "But hope is not lost my child. We can still fight these horrors from the stars. Seek the ancient powers, gain the gods blessings, and take back our home! *cough* [slow zoom on fathers face]",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\alien_arrival.png",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Invaders 5.mp3"
         },
         {
           "characterName": "Father",
           "text": "I must go now... to meet your mother in the gods embrace... I pray we do not meet again soon my child... [fade to black game begins]",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\alien_arrival.png",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Invaders 6.mp3"
         },
         {
           "characterName": "Twibble",
           "text": "Father is right, our people will need all the help we can get to fight these invaders. I hope I can reach the temple in time.",
           "imageFileName": "",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 1.mp3"
         },
         {
           "characterName": "Twibble",
           "text": "Thank the gods, the stories are real!",
           "imageFileName": "",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 2.mp3"
         },
         {
           "characterName": "Twibble",
           "text": "With this power our people finally stand a chance.",
           "imageFileName": "",
-          "voiceLineFileName": ""
+          "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 3.mp3"
         }
       ],
       "actions": []
