@@ -1295,6 +1295,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421162883}
     m_Modifications:
+    - target: {fileID: 7119360753408382640, guid: deb04d26875e8294daa5c25d7ae52cb7, type: 3}
+      propertyPath: id
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7119360753408382640, guid: deb04d26875e8294daa5c25d7ae52cb7, type: 3}
+      propertyPath: connectedId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7119360753408382640, guid: deb04d26875e8294daa5c25d7ae52cb7, type: 3}
+      propertyPath: connectScene
+      value: Scene2
+      objectReference: {fileID: 0}
     - target: {fileID: 7119360753408382646, guid: deb04d26875e8294daa5c25d7ae52cb7, type: 3}
       propertyPath: m_Name
       value: Door

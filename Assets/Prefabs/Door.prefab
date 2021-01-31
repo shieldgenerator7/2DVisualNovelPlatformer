@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2683731604271503065}
   - component: {fileID: 7119360753408382641}
   - component: {fileID: 7119360753408382640}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40cedaa4d56599e4dbe7cea8a9bad9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 11
+  id: -1
   triggerSound: {fileID: 8300000, guid: 71f55a8ea22a13b45ab5a6765f394f71, type: 3}
-  connectedId: 9
-  connectScene: Scene2
+  connectedId: -1
+  connectScene: 
