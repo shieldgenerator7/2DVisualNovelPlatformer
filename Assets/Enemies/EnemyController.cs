@@ -18,6 +18,7 @@ public class EnemyController : MonoBehaviour
     public float runSpeed;
     public Vector2 moveToPos;
     public float myHeight;
+    public float myWidth;
     public Vector2 oldPos;
     private static float nextStep = 1;
 
@@ -35,11 +36,17 @@ public class EnemyController : MonoBehaviour
     public float timeToFire;
     public bool isArmed = false;
     public RaycastHit2D inView;
+    public SpriteRenderer mySprite;
 
     void Awake()
     {
         moveToPos = oldPos = transform.position;
-        myHeight = transform.localScale.y+1f;
+        myHeight = transform.localScale.y+ 1f;
+        myWidth = transform.localScale.x +.5f;
+        if (this.gameObject.GetComponent<SpriteRenderer>())
+        {
+            mySprite = this.gameObject.GetComponent<SpriteRenderer>();
+        }
     }
 
 
@@ -47,7 +54,16 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         Ray2D playerCheck = new Ray2D(transform.position, Vector2.down);
-        Ray2D floorCheck1 = new Ray2D(transform.position, Vector2.down);
+       // Ray2D floorCheck1 = new Ray2D(transform.position, Vector2.down);
+        if(isLeft)
+        {
+            mySprite.flipX= true;
+        }
+        else
+        {
+            mySprite.flipX = false;
+        }
+        RaycastHit2D wallCheck = Physics2D.Raycast(transform.position, Vector2.down, myWidth);
         RaycastHit2D floorCheck = Physics2D.Raycast(transform.position, Vector2.down, myHeight);
         if (isShoot && !isArmed)
         {
@@ -69,8 +85,22 @@ public class EnemyController : MonoBehaviour
                 {
                     moveToPos.x = transform.position.x - 1f;
                     playerCheck = new Ray2D(transform.position, Vector2.left);
-                    oldPos = transform.position;
+                    float tempY = transform.position.y;
+                    if (oldPos.y > transform.position.y)
+                    {
+                        oldPos = transform.position;
+                    }
+                    else
+                    {
+                        oldPos = new Vector2(transform.position.x, oldPos.y);
+                    }
+                    
                     inView = Physics2D.Raycast(transform.position, Vector2.left);
+                    wallCheck = Physics2D.Raycast(transform.position, Vector2.left, myWidth);
+                    if (wallCheck)
+                    {
+                        isLeft = !isLeft;
+                    }
                 }
                 else
                 {
@@ -78,6 +108,11 @@ public class EnemyController : MonoBehaviour
                     playerCheck = new Ray2D(transform.position, Vector2.right);
                     oldPos = transform.position;
                     inView = Physics2D.Raycast(transform.position, Vector2.right);
+                    wallCheck = Physics2D.Raycast(transform.position, Vector2.right, myWidth);
+                    if (wallCheck)
+                    {
+                        isLeft = !isLeft;
+                    }
                 }
             }
             else
