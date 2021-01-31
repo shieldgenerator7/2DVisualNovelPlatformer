@@ -49,7 +49,6 @@ public class EnemyController : MonoBehaviour
         Ray2D playerCheck = new Ray2D(transform.position, Vector2.down);
         Ray2D floorCheck1 = new Ray2D(transform.position, Vector2.down);
         RaycastHit2D floorCheck = Physics2D.Raycast(transform.position, Vector2.down, myHeight);
-       // RaycastHit2D inView = Physics2D.Raycast(transform.position, Vector2.right);
         if (isShoot && !isArmed)
         {
             timeToFire -= Time.deltaTime;
@@ -63,11 +62,8 @@ public class EnemyController : MonoBehaviour
         if (isPatrolling)
         {
             //check movement status and move
-            //  Debug.Log(floorCheck);
-           // RaycastHit2D inView;
             if (floorCheck)
             {
-               
                 //march onward
                 if (isLeft)
                 {
@@ -82,13 +78,10 @@ public class EnemyController : MonoBehaviour
                     playerCheck = new Ray2D(transform.position, Vector2.right);
                     oldPos = transform.position;
                     inView = Physics2D.Raycast(transform.position, Vector2.right);
-
-
                 }
             }
             else
             {
-                 //   Debug.Log("false");
                 //at edge - stop and turn around
                 moveToPos = oldPos;
                 nextStep = nextStep * -1;
@@ -96,16 +89,8 @@ public class EnemyController : MonoBehaviour
                 
             }
             transform.position = Vector2.MoveTowards(transform.position, moveToPos, moveSpeed * Time.deltaTime);
-
-           
             if (inView)
             {
-              //  Debug.Log(inView.transform.tag);
-                // look for 'player'
-                //   Debug.Log(inView.transform.tag);
-                //    Debug.Log(inView.distance);
-              //  Debug.Log(playerCheck);
-
                 if (inView.transform.tag == "Player")
                 {
                     if (inView.distance < viewDistance)
@@ -115,10 +100,6 @@ public class EnemyController : MonoBehaviour
                     }
                 }
             }
-            
-
-
-
         }
         
 
@@ -137,7 +118,6 @@ public class EnemyController : MonoBehaviour
                 playerCheck = new Ray2D(transform.position, Vector2.right);
             }
 
-            //Ray floorCheck = new Ray(transform.position, Vector3.down);
             if (floorCheck)
             {
                // //while on platform...
@@ -155,18 +135,14 @@ public class EnemyController : MonoBehaviour
             if (inViewL || inViewR)
             {
                 // look for 'player'
-
                 if (inView.transform.tag == "Player")
                 {
                     if (inView.distance < viewDistance)
                     {
                         isHunting = true;
                         isPatrolling = false;
-
                     }
-
                 }
-               
             }
             else
             if (!isShield)
@@ -188,11 +164,7 @@ public class EnemyController : MonoBehaviour
 
     void fireAway()
     {
- 
         Instantiate(preTrap, transform.position, Quaternion.identity);
-        Debug.Log("fired");
- 
-        
     }
 
     void takeHit()
