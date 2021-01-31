@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public delegate void ButtonPressed();
     public static event ButtonPressed OnPlayerInteract;
     public static event ButtonPressed OnPlayerJump;
+    public static event ButtonPressed OnPlayerShoot;
     public static event ButtonPressed OnGamePaused;
 
     #region Initialization
@@ -120,6 +121,7 @@ public class PlayerController : MonoBehaviour
         };
         playerActionControls.Player.Jump.canceled += ctx => jumpKeyDown = false;
         playerActionControls.Player.Interact.performed += _ => OnPlayerInteract?.Invoke();
+        playerActionControls.Player.Shoot.performed += _ => OnPlayerShoot?.Invoke();
         playerActionControls.Player.Pause.performed += ctx => onPause();
     }
 

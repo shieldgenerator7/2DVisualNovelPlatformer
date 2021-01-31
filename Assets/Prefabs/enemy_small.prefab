@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 3047751902737339087}
   - component: {fileID: 4323357765083200541}
   - component: {fileID: 5436111932395463851}
-  - component: {fileID: 9169056148060038406}
+  - component: {fileID: 440139872425758927}
+  - component: {fileID: -5799435269325592103}
   m_Layer: 0
   m_Name: enemy_small
   m_TagString: Untagged
@@ -122,7 +123,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0043554306, y: -0.07}
   m_Size: {x: 0.5706806, y: 0.5706806}
   m_Direction: 0
---- !u!114 &9169056148060038406
+--- !u!114 &440139872425758927
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,14 +132,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 7370627508042538007}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96808d49c21ef4c43afcfc3522f8aa0b, type: 3}
+  m_Script: {fileID: 11500000, guid: 79a924f41ee16aa45bbebb4b84c7811c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHP: 1
+--- !u!114 &-5799435269325592103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7370627508042538007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b224b4e0585b39a4483a2092c9bfdb0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
   runSpeed: 8
-  moveToPos: {x: 0, y: 0, z: 0}
+  moveToPos: {x: 0, y: 0}
   myHeight: 0
-  oldPos: {x: 0, y: 0, z: 0}
+  oldPos: {x: 0, y: 0}
   isPatrolling: 1
   isHunting: 0
   isLeft: 0
@@ -146,7 +160,7 @@ MonoBehaviour:
   isShort: 1
   isShield: 0
   isShoot: 0
-  preTrap: {fileID: 0}
+  preTrap: {fileID: 8923921130428131624, guid: 339c07428f4be484f96410b484a8a799, type: 3}
   fireTimer: 3
   timeToFire: 0
   isArmed: 0

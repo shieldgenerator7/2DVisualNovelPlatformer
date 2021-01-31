@@ -22,6 +22,14 @@
                     "interactions": ""
                 },
                 {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "c0ee01b7-a113-406e-878d-c58bc3275f21",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "Crouch",
                     "type": "Button",
                     "id": "c2ae15f1-e4bf-4bf4-be82-85ca17dfade7",
@@ -264,6 +272,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "22fc4d0c-0d1f-48d3-b0df-27b1f0020046",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "58f59bad-e95b-4483-867f-591e409b6215",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa91a8e8-39d3-40ac-849b-856315027648",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -2783,6 +2783,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal
       objectReference: {fileID: 0}
+    - target: {fileID: 7542285467416259944, guid: fe4b284bd3b6aa74fb535f5b84beba4c, type: 3}
+      propertyPath: id
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542285467416259944, guid: fe4b284bd3b6aa74fb535f5b84beba4c, type: 3}
+      propertyPath: title
+      value: Powerup
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542285467416259944, guid: fe4b284bd3b6aa74fb535f5b84beba4c, type: 3}
+      propertyPath: counterName
+      value: powerup
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe4b284bd3b6aa74fb535f5b84beba4c, type: 3}
 --- !u!1001 &8163211432702612028

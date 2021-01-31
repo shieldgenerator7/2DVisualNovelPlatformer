@@ -95,6 +95,12 @@
           "text": "Thank the gods, the stories are real! With this power our people finally stand a chance.",
           "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\twibble_closeup.png",
           "voiceLineFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\VoiceLines\\Twibble 2 (Thank the gods).wav"
+        },
+        {
+          "characterName": "",
+          "text": "Now I can press J to shoot. (or Left or Right Trigger on Controller)",
+          "imageFileName": "C:\\Users\\shiel\\Documents\\Unity\\2DVisualNovelPlatformer\\Assets\\Resources\\DialoguePics\\twibble_closeup.png",
+          "voiceLineFileName": ""
         }
       ],
       "actions": [
@@ -437,7 +443,7 @@
         {
           "variableName": "endgame",
           "testType": 0,
-          "testValue": 0
+          "testValue": 1
         }
       ],
       "quotes": [
@@ -470,7 +476,7 @@
         {
           "variableName": "endgame",
           "actionType": 0,
-          "actionValue": 1
+          "actionValue": 2
         }
       ]
     },
@@ -480,7 +486,7 @@
         {
           "variableName": "endgame",
           "testType": 0,
-          "testValue": 0
+          "testValue": 1
         }
       ],
       "quotes": [
@@ -507,7 +513,7 @@
         {
           "variableName": "endgame",
           "actionType": 0,
-          "actionValue": 1
+          "actionValue": 2
         }
       ]
     },
@@ -517,7 +523,7 @@
         {
           "variableName": "endgame",
           "testType": 0,
-          "testValue": 1
+          "testValue": 2
         }
       ],
       "quotes": [
@@ -541,13 +547,13 @@
         },
         {
           "characterName": "Credits",
-          "text": "Story - Max Well Wilde",
+          "text": "Story - Warren Street, Shield Generator VII",
           "imageFileName": "",
           "voiceLineFileName": ""
         },
         {
           "characterName": "Credits",
-          "text": "Voice Acting - Max Well Wilde, Tristan D.",
+          "text": "Voice Acting - Warren Street, Tristan DeMaria",
           "imageFileName": "",
           "voiceLineFileName": ""
         }
