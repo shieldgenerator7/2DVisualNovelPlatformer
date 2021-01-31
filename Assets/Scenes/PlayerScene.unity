@@ -189,24 +189,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2418644773322412351, guid: 41919db851d36274db2e5313ce15433d, type: 3}
       propertyPath: startScene
-      value: Scene1
+      value: Scene6
       objectReference: {fileID: 0}
     - target: {fileID: 2418644773322412351, guid: 41919db851d36274db2e5313ce15433d, type: 3}
       propertyPath: playerObject
       value: 
       objectReference: {fileID: 2029982204}
-    - target: {fileID: 2684722213787236782, guid: 41919db851d36274db2e5313ce15433d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3545254400314948113, guid: 41919db851d36274db2e5313ce15433d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178357056691638978, guid: 41919db851d36274db2e5313ce15433d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41919db851d36274db2e5313ce15433d, type: 3}
 --- !u!1001 &3515695173973021337

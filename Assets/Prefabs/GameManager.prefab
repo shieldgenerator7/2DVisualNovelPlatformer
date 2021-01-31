@@ -305,7 +305,6 @@ GameObject:
   - component: {fileID: 2418644773322412345}
   - component: {fileID: 2418644773322412344}
   - component: {fileID: 2418644773322412351}
-  - component: {fileID: 2418644773322412350}
   - component: {fileID: 7306866911680740966}
   m_Layer: 0
   m_Name: GameManager
@@ -380,23 +379,6 @@ MonoBehaviour:
   playerObject: {fileID: 0}
   doorSound: {fileID: 8300000, guid: 71f55a8ea22a13b45ab5a6765f394f71, type: 3}
   transitionSound: {fileID: 8300000, guid: 769910226b53e5f48b09f0fb1f9906ed, type: 3}
---- !u!114 &2418644773322412350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2418644773322412349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd54e8f525eba5b41a4f0150342eff98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetVariable: variableName
-  containerPrefab: {fileID: 0}
-  spriteBank: {fileID: 0}
-  startX: -49
-  bufferX: -120
 --- !u!82 &7306866911680740966
 AudioSource:
   m_ObjectHideFlags: 0
@@ -741,7 +723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1046955672745640807
 RectTransform:
   m_ObjectHideFlags: 0
