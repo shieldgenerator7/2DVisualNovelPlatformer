@@ -153,6 +153,7 @@ MonoBehaviour:
   runSpeed: 0
   moveToPos: {x: 0, y: 0}
   myHeight: 0
+  myWidth: 0
   oldPos: {x: 0, y: 0}
   isPatrolling: 1
   isHunting: 0
@@ -161,7 +162,8 @@ MonoBehaviour:
   isShort: 0
   isShield: 0
   isShoot: 1
-  preTrap: {fileID: 8923921130428131624, guid: 339c07428f4be484f96410b484a8a799, type: 3}
+  preTrap: {fileID: 7370627508042538007, guid: 15a0b245b71943b48ab4527189f9ae2f, type: 3}
   fireTimer: 3
   timeToFire: 0
   isArmed: 0
+  mySprite: {fileID: 0}
