@@ -507,7 +507,7 @@ Transform:
   m_LocalScale: {x: 0.518848, y: 0.518848, z: 0.518848}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &792099999
 PrefabInstance:
@@ -703,6 +703,7 @@ GameObject:
   - component: {fileID: 848002332}
   - component: {fileID: 848002331}
   - component: {fileID: 848002330}
+  - component: {fileID: 848002334}
   m_Layer: 0
   m_Name: Borders
   m_TagString: Untagged
@@ -828,6 +829,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 13.373604, y: 0.97892}
   m_EdgeRadius: 0
+--- !u!114 &848002334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848002328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4586fd8d24ff31e4cb20c27ababf12d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1000926072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1631,7 +1644,7 @@ Transform:
   - {fileID: 1027060438}
   - {fileID: 345998360}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8163211432702612028
 PrefabInstance:
